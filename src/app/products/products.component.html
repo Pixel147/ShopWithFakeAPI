@@ -1,0 +1,41 @@
+<div class="container-fluid min-vh-100 text-white back pt-5">
+  <h1 class="text-center pb-3">Our products</h1>
+  <div class="container">
+    <div class="pb-3 ps-1 d-flex">
+      <button (click)="getProductsByCategory($event)" value="men's clothing"
+              class="btn background-red-color btn-dark text-white border-0 me-2">Category men's clothing
+      </button>
+      <button (click)="getProductsByCategory($event)" value="jewelery"
+              class="btn background-red-color btn-dark text-white border-0 me-2">Category jewelery
+      </button>
+      <button (click)="getProductsByCategory($event)" value="electronics"
+              class="btn background-red-color btn-dark text-white border-0 me-2">Category electronics
+      </button>
+      <button (click)="getProductsByCategory($event)" value="women's clothing"
+              class="btn background-red-color btn-dark text-white border-0 me-2">Category women's clothing
+      </button>
+      <button (click)="getSortProducts($event)" value="desc"
+              class="btn background-red-color btn-dark text-white border-0 me-2">Sort desc
+      </button>
+      <button (click)="getSortProducts($event)" value="asc"
+              class="btn background-red-color btn-dark text-white border-0 me-2">Sort asc
+      </button>
+    </div>
+    <div class="row">
+      <div *ngFor="let product of products | async" class="col-xxl-4 col-xl-4 col-lg-6 col-md-12 pb-5">
+        <div class="my-card shadow-lg">
+          <h6>Title : {{product.title}}</h6>
+          <p>Product ID : {{product.id}}</p>
+          <p>Price : {{product.price}}</p>
+          <p>Category : {{product.category}}</p>
+          <div class="d-flex justify-content-center">
+            <img width="280px" height="400px" src="{{product.image}}" alt="img">
+          </div>
+          <div class="d-flex justify-content-center">
+            <ngb-rating [readonly]="true" [rate]="product.rating.rate" [max]="5"></ngb-rating>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

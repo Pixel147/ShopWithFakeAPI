@@ -1,0 +1,20 @@
+.back{
+  background-color: #343a40;
+}
+.my-card {
+  color: white;
+  padding: 20px 20px 20px 20px;
+  border-radius: 30px;
+  background: #212529;
+  height: 650px;
+}
+ngb-rating{
+  font-size: 30px;
+  color: #f03636;
+}
+.background-red-color{
+  background-color: #f03636;
+}
+.text-red-color{
+  color: #f03636;
+}

@@ -1,0 +1,40 @@
+.back{
+  background: url("src/assets/img/back.gif") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.text-block{
+  padding-top: 25%;
+}
+.block{
+  padding: 5% 5% 5% 5%;
+  background: #343a40;
+  opacity: 0.8;
+  border-radius: 30px;
+}
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+}
+
+.shadow__btn {
+  background: #f03636;
+  box-shadow: 0 0 20px #f03636;
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px #f03636,
+  0 0 15px #f03636,
+  0 0 25px #f03636,
+  0 0 40px #f03636;
+}
