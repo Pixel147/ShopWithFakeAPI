@@ -1,4 +1,4 @@
-.back{
+.back1{
   background-color: #343a40;
 }
 .my-card {
@@ -10,11 +10,5 @@
 }
 ngb-rating{
   font-size: 30px;
-  color: #f03636;
-}
-.background-red-color{
-  background-color: #f03636;
-}
-.text-red-color{
   color: #f03636;
 }

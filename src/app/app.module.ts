@@ -12,6 +12,10 @@ import {FormsModule} from "@angular/forms";
 import {RouterModule} from "@angular/router";
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {ProductService} from "./service/ProductService";
+import { ProfileComponent } from './profile/profile.component';
+import { LoginComponent } from './login/login.component';
+import {AuthService} from "./service/AuthService";
+import {UserService} from "./service/UserService";
 
 @NgModule({
   declarations: [
@@ -19,7 +23,9 @@ import {ProductService} from "./service/ProductService";
     MenuComponent,
     FooterComponent,
     HomeComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProfileComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +35,11 @@ import {ProductService} from "./service/ProductService";
     RouterModule,
     NgbModule,
   ],
-  providers: [ProductService],
+  providers: [
+    ProductService,
+    AuthService,
+    UserService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

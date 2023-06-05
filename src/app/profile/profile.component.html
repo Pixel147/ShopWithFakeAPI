@@ -1,0 +1,45 @@
+<div class="container-fluid min-vh-100 back1">
+  <div class="container">
+    <div style="padding-top: 100px" class="d-flex justify-content-center">
+      <div class="card bg-dark text-white mb-3 w-50" style="border-radius: .5rem;">
+        <div class="row g-0">
+          <div class="col-md-4 text-center text-white"
+               style="border-top-left-radius: .5rem; border-bottom-left-radius: .5rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/User-avatar.svg/1200px-User-avatar.svg.png"
+                 alt="Avatar" class="img-fluid my-5" style="width: 80px;" />
+            <h5>{{user.username}}</h5>
+            <h6>ID : {{user.id}}</h6>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body p-4">
+              <h6>Information</h6>
+              <hr class="mt-0 mb-4">
+              <div class="row pt-1">
+                <div class="col-6 mb-3">
+                  <h6>Email</h6>
+                  <p>{{user.email}}</p>
+                </div>
+                <div class="col-6 mb-3">
+                  <h6>Phone</h6>
+                  <p>{{user.phone}}</p>
+                </div>
+              </div>
+              <h6>Projects</h6>
+              <hr class="mt-0 mb-4">
+              <div class="row pt-1">
+                <div class="col-6 mb-3">
+                  <h6>Firstname</h6>
+                  <p>{{user.name.firstname}}</p>
+                </div>
+                <div class="col-6 mb-3">
+                  <h6>Lastname</h6>
+                  <p>{{user.name.lastname}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

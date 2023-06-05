@@ -3,3 +3,16 @@
 body{
   font-family: 'Geologica', sans-serif;
 }
+.back{
+  background: url("src/assets/img/back.gif") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.background-red-color{
+  background-color: #f03636;
+}
+.text-red-color{
+  color: #f03636;
+}

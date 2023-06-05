@@ -1,0 +1,21 @@
+<div class="container-fluid min-vh-100 back text-white">
+  <div class="container">
+    <div style="padding-top: 15%" class="d-flex justify-content-center">
+      <form class="my-form" action="POST">
+        <h2 class="text-center pb-3">Login</h2>
+        <div class="form">
+          <input [(ngModel)]="username" class="input text-center" placeholder="Username" name="username" required="" type="text">
+          <span class="input-border"></span>
+        </div>
+        <div class="form pt-3">
+          <input [(ngModel)]="password" class="input text-center" placeholder="Password" name="password" required="" type="password">
+          <span class="input-border"></span>
+        </div>
+        <p [style.display]="displayErrorLogin ? 'block':'none'" class="text-center text-red-color">Invalid login</p>
+        <div class="d-flex justify-content-center pt-3">
+          <button (click)="login()" class="btn btn-dark border-0 background-red-color">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

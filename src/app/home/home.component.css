@@ -1,10 +1,4 @@
-.back{
-  background: url("src/assets/img/back.gif") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 .text-block{
   padding-top: 25%;
 }
