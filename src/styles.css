@@ -16,3 +16,6 @@ body{
 .text-red-color{
   color: #f03636;
 }
+.back1{
+  background: url("src/assets/img/back2.png") center center;
+}

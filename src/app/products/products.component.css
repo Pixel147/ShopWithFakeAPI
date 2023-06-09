@@ -1,6 +1,4 @@
-.back1{
-  background-color: #343a40;
-}
+
 .my-card {
   color: white;
   padding: 20px 20px 20px 20px;
@@ -11,4 +9,8 @@
 ngb-rating{
   font-size: 30px;
   color: #f03636;
+}
+.cart{
+  margin-top: 100px;
+  margin-right: 20px;
 }

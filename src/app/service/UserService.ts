@@ -1,6 +1,5 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {Observable} from "rxjs";
 
 @Injectable()
 export class UserService{
@@ -8,5 +7,8 @@ export class UserService{
   }
   getUser(){
      return this.http.get(`https://fakestoreapi.com/users/${localStorage.getItem("id")}`);
+  }
+  getUserCart(){
+    return this.http.get(`https://fakestoreapi.com/carts/user/${localStorage.getItem("id")}`);
   }
 }

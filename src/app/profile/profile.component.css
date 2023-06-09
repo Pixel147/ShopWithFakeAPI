@@ -1,3 +1,18 @@
-.back1{
-  background-color: #343a40;
+.accordion-button{
+  background-color: #212529;
+  color: white;
+}
+.accordion-button::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f107";
+  margin-right: 0.5rem;
+  float: left;
+  color:white!important;
+}
+.accordion-button.collapsed::before {
+  content: "\f105";
+}
+.accordion-button::after {
+  background-image: none;
 }
